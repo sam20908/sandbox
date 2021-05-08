@@ -1,0 +1,123 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_55f6f && [1/2] Building C object CMakeFiles/cmTC_55f6f.dir/src.c.o
+[2/2] Linking C executable cmTC_55f6f
+FAILED: cmTC_55f6f 
+: && /bin/clang-12 -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_55f6f.dir/src.c.o  -o cmTC_55f6f   && :
+/bin/ld: CMakeFiles/cmTC_55f6f.dir/src.c.o: in function `main':
+src.c:(.text+0x35): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x3e): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x4b): undefined reference to `pthread_join'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_51134 && [1/2] Building C object CMakeFiles/cmTC_51134.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_51134
+FAILED: cmTC_51134 
+: && /bin/clang-12 -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_51134.dir/CheckFunctionExists.c.o  -o cmTC_51134  -lpthreads && :
+/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wlogicalop failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_23c5c && [1/2] Building CXX object CMakeFiles/cmTC_23c5c.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_23c5c.dir/src.cxx.o 
+/bin/clang++-12    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -DCOMPILER_SUPPORT_Wlogicalop -Werror   -Wlogical-op -o CMakeFiles/cmTC_23c5c.dir/src.cxx.o -c src.cxx
+error: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Werror,-Wunknown-warning-option]
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7eec5 && [1/2] Building CXX object CMakeFiles/cmTC_7eec5.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_7eec5.dir/src.cxx.o 
+/bin/clang++-12    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_7eec5.dir/src.cxx.o -c src.cxx
+clang: error: unknown argument: '-wd981'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e413f && [1/2] Building CXX object CMakeFiles/cmTC_e413f.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_e413f.dir/src.cxx.o 
+/bin/clang++-12    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_e413f.dir/src.cxx.o -c src.cxx
+clang: error: unknown argument: '-wd2304'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d6026 && [1/2] Building CXX object CMakeFiles/cmTC_d6026.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_d6026.dir/src.cxx.o 
+/bin/clang++-12    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_d6026.dir/src.cxx.o -c src.cxx
+clang: error: unknown argument: '-strict-ansi'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Looking for a Fortran compiler failed with the following output:
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/sames/Projects/sandbox/build/eigen/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "/home/sames/Projects/sandbox/build/eigen/test/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/sames/Projects/sandbox/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d5af7 && [1/2] Building CXX object CMakeFiles/cmTC_d5af7.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_d5af7.dir/src.cxx.o 
+/bin/clang++-12    -std=c++11  -Wall  -Wextra  -Wshadow  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654  -wd654   -wd654 -o CMakeFiles/cmTC_d5af7.dir/src.cxx.o -c src.cxx
+clang: error: unknown argument: '-wd654'
+clang: error: unknown argument: '-wd654'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }

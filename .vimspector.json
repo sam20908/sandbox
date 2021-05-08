@@ -1,0 +1,27 @@
+
+{
+    "configurations": {
+        "all": {
+            "adapter": "",
+            "configuration": {
+                "Mimode": "",
+                "args": [],
+                "cwd": "${workspaceRoot}",
+                "program": "",
+                "request": "launch",
+                "type": ""
+            }
+        },
+        "sandbox": {
+            "adapter": "",
+            "configuration": {
+                "Mimode": "",
+                "args": [],
+                "cwd": "${workspaceRoot}",
+                "program": "/home/sames/Projects/sandbox/cmake-build-Release/sandbox",
+                "request": "launch",
+                "type": ""
+            }
+        }
+    }
+}

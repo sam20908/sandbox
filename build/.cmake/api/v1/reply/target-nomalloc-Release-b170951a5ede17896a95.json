@@ -1,0 +1,127 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"eigen-3.4-rc1/cmake/EigenTesting.cmake",
+			"eigen-3.4-rc1/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 160,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "nomalloc_4::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "nomalloc_6::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "nomalloc_1::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "nomalloc_3::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "nomalloc_8::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "nomalloc_2::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "nomalloc_7::@add2de9f45bccc019659"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "nomalloc_5::@add2de9f45bccc019659"
+		}
+	],
+	"id" : "nomalloc::@add2de9f45bccc019659",
+	"name" : "nomalloc",
+	"paths" : 
+	{
+		"build" : "eigen-3.4-rc1/test",
+		"source" : "eigen-3.4-rc1/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
