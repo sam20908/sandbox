@@ -1,0 +1,9 @@
+[submodule "mpp"]
+	path = mpp
+	url = https://github.com/sam20908/mpp
+[submodule "benchmark"]
+	path = benchmark
+	url = https://github.com/google/benchmark
+[submodule "eigen"]
+	path = eigen
+	url = https://gitlab.com/libeigen/eigen
