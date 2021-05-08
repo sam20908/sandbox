@@ -1,4 +1,0 @@
-# Target labels
- BuildOfficial
-# Source files and their labels
-/home/sames/Projects/sandbox/eigen-3.4-rc1/test/mapstride.cpp
